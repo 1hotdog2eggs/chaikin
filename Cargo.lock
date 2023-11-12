@@ -267,6 +267,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd16c4719339c4530435d38e511904438d07cce7950afa3718a84ac36c10e89e"
 
 [[package]]
+name = "chaikin"
+version = "0.1.0"
+dependencies = [
+ "pixels",
+ "winit",
+]
+
+[[package]]
 name = "codespan-reporting"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1139,15 +1147,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "s"
-version = "0.1.0"
-dependencies = [
- "pixels",
- "winit",
- "winit_input_helper",
-]
-
-[[package]]
 name = "safe_arch"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1988,15 +1987,6 @@ dependencies = [
  "x11-dl",
  "x11rb",
  "xkbcommon-dl",
-]
-
-[[package]]
-name = "winit_input_helper"
-version = "0.15.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e9a2781262142b6f19c4af19eb39b5eb402a4e6daf9b5e484b2b2bc5461c8f1"
-dependencies = [
- "winit",
 ]
 
 [[package]]

@@ -6,10 +6,8 @@ use winit::{
     event_loop::{ControlFlow, EventLoop},
     window::WindowBuilder,
 };
-use winit_input_helper::WinitInputHelper;
 
-use chaikin::*;
-
+mod chaikin_algo;
 const SCREEN_WIDTH: u32 = 800;
 const SCREEN_HEIGHT: u32 = 600;
 
@@ -37,13 +35,6 @@ fn main() {
     // You can create and handle your own custom Event::UserEvents
     event_loop
         .run(move |event, elwt| {
-            // if let Event::RedrawRequested(_) = event {
-            //     draw(&b, pixels.get_frame());
-            //     if pixels.render().is_err() {
-            //         control_flow.exit();
-            //         return;
-            //     }
-            // }
             match event {
                 Event::WindowEvent {
                     event: WindowEvent::CloseRequested,
